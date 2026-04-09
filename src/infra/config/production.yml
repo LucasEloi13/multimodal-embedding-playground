@@ -1,0 +1,5 @@
+pipeline:
+  text_embedding_batch: 250
+  image_embedding_batch: 64
+  image_download_workers: 32
+  image_process_workers: 8

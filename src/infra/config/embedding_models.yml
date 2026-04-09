@@ -1,0 +1,17 @@
+text_embedding:
+  provider: openai
+  model: text-embedding-3-large
+  dimension: 3072
+  batch_size: 512
+  max_retries: 5
+  initial_delay: 1.0
+
+
+image_embedding:
+  provider: dino
+  model: vit_base_patch16_dinov3
+  dimension: 768
+  device: auto
+
+vector_db:
+  provider: faiss
