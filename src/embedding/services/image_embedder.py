@@ -139,5 +139,13 @@ class ImageEmbeddingService:
 
 			return DINOEmbedder(model=model, device=device)
 
+		if provider in {"fashion_clip", "fashion-clip"}:
+			try:
+				from infra.embeddings_models.fashion_clip import FashionCLIPEmbedder
+			except ModuleNotFoundError:
+				from src.infra.embeddings_models.fashion_clip import FashionCLIPEmbedder
+
+			return FashionCLIPEmbedder(model=model, device=device)
+
 		raise ValueError(f"Unsupported image embedding provider: {provider}")
 

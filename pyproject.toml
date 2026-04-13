@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+	"boto3>=1.35.0",
 	"faiss-cpu>=1.8.0",
 	"numpy>=2.0.0",
 	"openai>=1.40.0",
@@ -14,7 +15,11 @@ dependencies = [
 	"requests>=2.32.0",
 	"timm>=1.0.0",
 	"torch>=2.3.0",
+	"transformers>=4.45.0",
 ]
 
 [project.scripts]
 run_reference_indexing.py = "src.pipeline.run_reference_indexing:main"
+run_retrieval_evaluation.py = "src.pipeline.run_retrieval_evaluation:main"
+download_scrapped_listings_s3.py = "src.pipeline.download_scrapped_listings_s3:main"
+run_retrieval_strategy_comparison.py = "src.pipeline.run_retrieval_strategy_comparison:main"

@@ -8,9 +8,9 @@ text_embedding:
 
 
 image_embedding:
-  provider: dino
-  model: vit_base_patch16_dinov3
-  dimension: 768
+  provider: fashion_clip
+  model: patrickjohncyh/fashion-clip
+  dimension: 512
   device: auto
 
 vector_db:

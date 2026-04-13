@@ -3,3 +3,13 @@ pipeline:
   image_embedding_batch: 64
   image_download_workers: 32
   image_process_workers: 8
+
+test: 
+  sample_size: 500
+  top_k: 25
+  rerank_k: 5
+  rerank_strategy: image_only
+  rerank_image_weight: 0.5
+  rerank_text_weight: 0.5
+  workers: 4
+  max_samples_per_output_file: 250
