@@ -1,0 +1,31 @@
+{
+  "calls": 192,
+  "input_tokens": 318385,
+  "input_image_tokens": 417501,
+  "input_total_tokens": 735886,
+  "thoughts_tokens": 0,
+  "cached_content_tokens": 0,
+  "tool_use_prompt_tokens": 0,
+  "output_tokens": 17901,
+  "accounted_total_tokens": 753787,
+  "unaccounted_tokens": 0,
+  "total_tokens": 753787,
+  "runs": [
+    {
+      "run_id": "20260414_145854",
+      "started_at": "2026-04-14T14:58:54.971419+00:00",
+      "provider": "gemini",
+      "calls": 192,
+      "input_tokens": 318385,
+      "input_image_tokens": 417501,
+      "input_total_tokens": 735886,
+      "thoughts_tokens": 0,
+      "cached_content_tokens": 0,
+      "tool_use_prompt_tokens": 0,
+      "output_tokens": 17901,
+      "accounted_total_tokens": 753787,
+      "unaccounted_tokens": 0,
+      "total_tokens": 753787
+    }
+  ]
+}

@@ -88,3 +88,18 @@ uv run python src/pipeline/run_retrieval_evaluation.py \
 ```
 
 If an expected index file is missing, the pipeline will fail with an actionable message showing the command to generate it or how to pass an explicit index path.
+
+## Usage logs to structured JSON
+
+Convert usage logs from JSONL to formatted JSON with summary metrics:
+
+```bash
+uv run python src/pipeline/run_usage_log_structuring.py
+```
+
+To convert only one file:
+
+```bash
+uv run python src/pipeline/run_usage_log_structuring.py \
+	--input-file src/infra/llm/usage_logs/usage_20260414_134214.jsonl
+```

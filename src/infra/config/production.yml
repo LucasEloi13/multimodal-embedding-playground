@@ -13,3 +13,13 @@ test:
   rerank_text_weight: 0.5
   workers: 4
   max_samples_per_output_file: 250
+
+llm_evaluation:
+  provider: gemini
+  workers: 6
+  prompt_path: src/infra/llm/prompt/prompt.md
+  usage_logs_dir: src/infra/llm/usage_logs
+  gemini:
+    model: gemini-3.1-flash-lite-preview
+    temperature: 0.0
+    request_timeout_seconds: 30
